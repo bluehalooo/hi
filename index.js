@@ -11,13 +11,14 @@ function encrypt(inputString) {
       }
       // Check if the character is an uppercase letter
       else {
-        // Convert the character to its ASCII code, shift by 1, and convert back to a character
+        // Convert the character to its ASCII code, shift by 29, and convert back to a character
         result += String.fromCharCode((currentChar.charCodeAt(0) - 65 + 29) % 26 + 65);
       }
       
     }
   
     return result;
+    document.getElementById("thing").innerHTML(result)
    }
   
    function deencrypt(inputString) {
@@ -38,5 +39,6 @@ function encrypt(inputString) {
     }
   
     return result;
+    document.getElementById("thing").innerHTML(result)
    }
   
