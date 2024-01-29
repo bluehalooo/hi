@@ -1,5 +1,7 @@
-function encrypt(inputString) {
+function encrypt() {
+
     let result = '';
+    let inputString = document.getElementById('encrypt').value;
   
     for (let i = 0; i < inputString.length; i++) {
       let currentChar = inputString.charAt(i);
