@@ -20,7 +20,7 @@ function encrypt() {
     }
   
     return result;
-    document.getElementById("thing").innerHTML(result)
+    document.getElementById("thing").innerHTML(result).value;
    }
   
    function deencrypt(inputString) {
